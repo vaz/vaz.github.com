@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://vaz.github.com/blog/archives/</loc>
+        <loc>http://code.tryptid.com/blog/archives/</loc>
         <lastmod>2012-10-03T11:50:16-07:00</lastmod>
     </url>
     <url>
-        <loc>http://vaz.github.com/</loc>
+        <loc>http://code.tryptid.com/</loc>
         <lastmod>2012-10-03T11:50:16-07:00</lastmod>
     </url>
 </urlset>
