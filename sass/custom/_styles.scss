@@ -1,2 +1,25 @@
 // This File is imported last, and will override other styles in the cascade
 // Add styles here to make changes without digging in too much
+
+
+body {
+  > header {
+    h1 {
+      display: inline;
+    }
+    h2 {
+      display:inline;
+      font-size:1.3em;
+    }
+  }
+  > div {
+    background: $sidebar-bg;
+    > div {
+      background: $main-bg;
+    }
+  }
+}
+
+#{headings()}{
+  font-size:2.0em;
+}
