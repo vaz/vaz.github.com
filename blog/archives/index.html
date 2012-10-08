@@ -9,7 +9,7 @@
   <meta name="author" content="Vaz">
 
   
-  <meta name="description" content=" Blog Archive Recent Posts ">
+  <meta name="description" content="Blog Archive Recent Posts GitHub Repos Status updating... @vaz on GitHub $.domReady(function(){ if (!window.jXHR){ var jxhr = document.createElement &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -29,7 +29,8 @@
 <link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 <link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
 
-<link href='http://fonts.googleapis.com/css?family=Poiret+One|Megrim|Raleway:400,700' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Poiret+One|Megrim|Raleway:400,700|Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Antic+Didone' rel='stylesheet' type='text/css'>
 
   
 
@@ -39,7 +40,7 @@
   <header role="banner"><hgroup>
   <h1><a href="/">vaz allen/</a></h1>
   
-    <h2>code</h2>
+    <h2>what is this thing really for anyway and where does it go?</h2>
   
 </hgroup>
 
@@ -90,6 +91,51 @@
   </ul>
 </section>
 
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  
+  <a href="https://github.com/vaz">@vaz</a> on GitHub
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'vaz',
+            count: 3,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+<section>
+  <h1>Latest Tweets</h1>
+  <ul id="tweets">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $.domReady(function(){
+      getTwitterFeed("tryptid", 1, false);
+    });
+  </script>
+  <script src="/javascripts/twitter.js" type="text/javascript"> </script>
+  
+    <a href="http://twitter.com/tryptid" class="twitter-follow-button" data-show-count="false">Follow @tryptid</a>
+  
+</section>
 
 
 
