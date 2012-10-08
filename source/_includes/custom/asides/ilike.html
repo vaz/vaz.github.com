@@ -1,0 +1,13 @@
+{% if site.ilike %}
+<section>
+  <h1>Stuff I like</h2>
+  <ul>
+    {% for thing in site.ilike %}
+    <li>
+      <a href="{{ thing.url }}">{{ thing.name }}</a>
+      <p>{{ thing.desc }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endif %}
