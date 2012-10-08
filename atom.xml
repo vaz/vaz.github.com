@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[vaz allen/]]></title>
+  <title><![CDATA[vaz/]]></title>
   <link href="http://code.tryptid.com/atom.xml" rel="self"/>
   <link href="http://code.tryptid.com/"/>
-  <updated>2012-10-07T17:11:08-07:00</updated>
+  <updated>2012-10-07T18:12:45-07:00</updated>
   <id>http://code.tryptid.com/</id>
   <author>
     <name><![CDATA[Vaz]]></name>
