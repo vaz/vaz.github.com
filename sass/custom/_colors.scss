@@ -1,29 +1,43 @@
 // Here you can easily change your sites's color scheme.
-// To give it a try, uncomment some of the lines below rebuild your blog, and see how it works.
+// To give it a try, uncomment some of the lines below rebuild your blog, and
+// see how it works.
 // If you need a handy color picker try http://hslpicker.com
 
-$page-bg: white;
-$header-bg: $page-bg;
-$title-color: #ddbbee;
-$title-shadow-color: darken($title-color, 20);
-$subtitle-color: #8e65e8;
-$nav-bg: desaturate(lighten(#8f7ac1, 18), 5);
+$main-hue: #7861EA;
+
+// :: page
+$page-bg: #f3fff0;
+
+// :: header
+$header-bg: adjust-color($main-hue, $lightness:-60, $saturation:-14);
+$title-color: #eeddee;
+$subtitle-color: $main-hue;
+
+// :: nav
+$nav-bg: adjust-color($header-bg, $lightness:0, $saturation:0);
 $nav-bg-front: #000;
 //$nav-bg-back: linear-gradient(saturate(lighten($nav-bg, 12), 20), $nav-bg, desaturate(darken($nav-bg, 50), 20));
-$sidebar-bg: desaturate(lighten($nav-bg, 20), 10);
+$nav-color: adjust-color($nav-bg, $lightness:68, $saturation:-20);
+
+// :: sidebar
+$sidebar-bg: desaturate(lighten($main-hue, 30), 20);
 //$sidebar-link-color: saturate(#526f9a, 10);
 //$sidebar-link-color-hover: darken(#7ab662, 9);
-$footer-bg: $nav-bg !default;
-$footer-color: darken(desaturate($footer-bg, 20), 30);
+
+// :: footer
+$footer-bg: $nav-bg;
+$footer-color: $nav-color;
 $footer-bg-front: #000;
 //$footer-bg-back: linear-gradient(lighten($footer-bg, 8), $footer-bg, darken($footer-bg, 11));
+$page-border-bottom: none;
 
+// :: text colours
 $text-color: desaturate(lighten(#415, 10), 10);
 
-$link-color: lighten(#762b94, 3) !default;
-$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25) !default;
-$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4) !default;
-$link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
+$link-color: lighten(#762b94, 3);
+$link-color-hover: adjust-color($link-color, $lightness: 10, $saturation: 25);
+$link-color-visited: adjust-color($link-color, $hue: 80, $lightness: -4);
+$link-color-active: adjust-color($link-color-hover, $lightness: -15);
 
 /* To use the light Solarized highlighting theme uncomment the following line */
 //$solarized: light;
